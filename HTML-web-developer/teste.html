@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratório de HTML - Projeto Final</title>
+</head>
+<body>
+
+    <h1>Exercício Geral de Tags HTML</h1>
+    <p>Este documento integra <strong>todas</strong> as tags explicadas em aula e pesquisadas.</p>
+    
+    <hr>
+
+    <h2>1. Estruturas de Texto e Listas</h2>
+    <p>Exemplo de citação e formatação:</p>
+    <blockquote>
+        "O aprendizado de HTML requer prática constante e atenção à semântica." 
+        <br>— <cite>Manual do Desenvolvedor</cite>
+    </blockquote>
+
+    <p>Minhas tarefas (Lista Ordenada):</p>
+    <ol>
+        <li>Revisar tags de texto como <mark>mark</mark> e <small>small</small></li>
+        <li>Praticar fórmulas: H<sub>2</sub>O e x<sup>2</sup></li>
+        <li>Implementar hyperlinks com a tag <a href="#">a</a></li>
+    </ol>
+
+    <p>Elementos de pesquisa (Lista Não-Ordenada):</p>
+    <ul>
+        <li><abbr title="HyperText Markup Language">HTML</abbr> (Abreviação)</li>
+        <li><del>Texto removido</del></li>
+        <li><font color="red">Texto colorido</font></li>
+    </ul>
+
+    <hr>
+
+    <h2>2. Formulário Interativo Completo</h2>
+    <form action="/enviar-dados" method="POST" onsubmit="alert('Iniciando validação do formulário...'); return true;">
+        
+        <fieldset>
+            <legend>Preferências de Usuário</legend>
+
+            <p>Selecione seu nível (RadioButton - Seleção Única):</p>
+            <input type="radio" id="ini" name="nivel" value="iniciante">
+            <label for="ini">Iniciante</label>
+            <input type="radio" id="ava" name="nivel" value="avancado">
+            <label for="ava">Avançado</label>
+
+            <p>Interesses (Checkbox - Seleção Múltipla):</p>
+            <input type="checkbox" id="musica" name="interesses" value="musica">
+            <label for="musica">Música</label>
+            <input type="checkbox" id="tech" name="interesses" value="tecnologia">
+            <label for="tech">Tecnologia</label>
+
+            <p>Selecione as cores favoritas (Segure Ctrl para selecionar múltiplas):</p>
+            <select name="cores" multiple>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="preto">Preto</option>
+            </select>
+
+            <p>Ajuste o volume do sistema (Range):</p>
+            0 <input type="range" name="volume" min="0" max="100"> 100
+        </fieldset>
+
+        <br>
+        <button type="submit">Enviar Formulário</button>
+        <button type="reset">Limpar Tudo</button>
+    </form>
+
+    <hr>
+    <p>Página criada para fins didáticos. © 2026.</p>
+
+</body>
+</html>
